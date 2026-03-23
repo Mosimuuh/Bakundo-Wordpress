@@ -1,24 +1,19 @@
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from '@wordpress/block-editor';
 
-/**
- * The save function defines the way in which the different attributes should
- * be combined into the final markup, which is then serialized by the block
- * editor into `post_content`.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#save
- *
- * @return {Element} Element to render.
- */
-export default function save() {
+export default function save( { attributes } ) {
+	const { heading, subheading, buttonText } = attributes;
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ 'Bakundo Hero – hello from the saved content!' }
-		</p>
+		<section { ...useBlockProps.save( { className: 'bakundo-hero' } ) }>
+			<h1 className="bakundo-hero__heading">
+				<RichText.Content value={ heading } />
+			</h1>
+			<p className="bakundo-hero__subheading">
+				<RichText.Content value={ subheading } />
+			</p>
+			<a className="bakundo-hero__button">
+				<RichText.Content value={ buttonText } />
+			</a>
+		</section>
 	);
 }
