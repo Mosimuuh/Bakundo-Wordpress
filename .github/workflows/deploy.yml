@@ -27,10 +27,10 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SIMPLY_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete"
-          SOURCE: "themes/bakundo-theme/"
+          SOURCE: "themes/bakundo-starter-theme/"
           REMOTE_HOST: linux59.unoeuro.com
           REMOTE_USER: bakundo.dk
-          TARGET: /var/www/bakundo.dk/gutenberg.test/wp-content/themes/bakundo-theme/
+          TARGET: /var/www/bakundo.dk/gutenberg.test/wp-content/themes/bakundo-starter-theme/
 
       - name: Deploy plugin to Simply
         uses: easingthemes/ssh-deploy@main

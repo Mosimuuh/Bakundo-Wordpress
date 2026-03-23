@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#09afb3"
+        },
+        {
+          "name": "Dark",
+          "slug": "dark",
+          "color": "#0d0d0d"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "color": "#ffffff"
+        },
+        {
+          "name": "Gradient Start",
+          "slug": "gradient-start",
+          "color": "#ff7500"
+        },
+        {
+          "name": "Gradient End",
+          "slug": "gradient-end",
+          "color": "#f4be31"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Space Grotesk",
+          "slug": "heading",
+          "fontFamily": "Space Grotesk, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Space Grotesk",
+              "fontWeight": "400 700",
+              "fontStyle": "normal",
+              "src": [ "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" ]
+            }
+          ]
+        },
+        {
+          "name": "Inter",
+          "slug": "body",
+          "fontFamily": "Inter, sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "400 600",
+              "fontStyle": "normal",
+              "src": [ "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" ]
+            }
+          ]
+        }
+      ]
+    },
+    "spacing": {
+      "spacingScale": {
+        "steps": 7
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#0d0d0d",
+      "text": "#ffffff"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--body)",
+      "fontSize": "1rem",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--heading)"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "#09afb3",
+          "text": "#ffffff"
+        }
+      }
+    }
+  }
+}
