@@ -20,6 +20,7 @@ jobs:
           REMOTE_HOST: linux59.unoeuro.com
           REMOTE_USER: bakundo.dk
           TARGET: /var/www/bakundo.dk/gutenberg.test/wp-content/themes/bakundo-theme/
+          EXCLUDE: ".gitkeep"
 
       - name: Deploy plugin to Simply
         uses: easingthemes/ssh-deploy@main
