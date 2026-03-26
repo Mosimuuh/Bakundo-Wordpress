@@ -6,7 +6,9 @@
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build --blocks-manifest && xcopy /E /Y /I build \"C:\\Users\\Mosimuuh\\Local Sites\\bakundo\\app\\public\\wp-content\\plugins\\bakundo-blocks\\bakundo-hero\\build\"",
+		"build": "wp-scripts build --blocks-manifest",
+		"copy:local": "xcopy /E /Y /I build \"C:\\Users\\Mosimuuh\\Local Sites\\bakundo\\app\\public\\wp-content\\plugins\\bakundo-blocks\\bakundo-hero\\build\"",
+		"build:local": "npm run build && npm run copy:local",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
