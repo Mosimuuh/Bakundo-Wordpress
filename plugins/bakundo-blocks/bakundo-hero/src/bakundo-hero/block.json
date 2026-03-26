@@ -1,32 +1,67 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "create-block/bakundo-hero",
-	"version": "0.1.0",
-	"title": "Bakundo Hero",
-	"category": "widgets",
-	"icon": "cover-image",
-	"description": "Hero sektion med overskrift, underoverskrift og CTA knap.",
-	"supports": {
-		"html": false
-	},
-	"attributes": {
-		"heading": {
-			"type": "string",
-			"default": ""
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "create-block/bakundo-hero",
+    "version": "0.1.0",
+    "title": "Bakundo Hero",
+    "category": "widgets",
+    "icon": "cover-image",
+    "description": "Hero sektion med overskrift, billede og CTA.",
+    "supports": {
+        "html": false
+    },
+	
+    "attributes": {
+
+        "badge": {
+            "type": "string",
+            "default": "Noget cool :)"
+        },
+
+        "heading": {
+    	"type": "string",
+    	"default": "Overskrift"
 		},
-		"subheading": {
-			"type": "string",
-			"default": ""
-		},
-		"buttonText": {
-			"type": "string",
-			"default": ""
-		}
-	},
-	"textdomain": "bakundo-hero",
-	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+
+        "headingGradient": {
+            "type": "string",
+            "default": "farvet overskrift"
+        },
+
+        "subheading": {
+            "type": "string",
+            "default": "brødtekst"
+        },
+
+        "buttonText": {
+            "type": "string",
+            "default": "tekst til knap"
+        },
+
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+		
+        "secondButtonText": {
+            "type": "string",
+            "default": "tekst til anden knap"
+        },
+
+        "secondButtonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+
+        "image": {
+            "type": "object",
+            "default": {}
+        }
+		
+    },
+    "textdomain": "bakundo-hero",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js"
 }

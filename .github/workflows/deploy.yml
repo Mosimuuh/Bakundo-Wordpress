@@ -22,6 +22,12 @@ jobs:
           npm install
           npm run build
 
+      - name: Build bakundo-header block
+        run: |
+          cd plugins/bakundo-blocks/bakundo-header
+          npm install
+          npm run build
+
       - name: Deploy theme to Simply
         uses: easingthemes/ssh-deploy@main
         with:

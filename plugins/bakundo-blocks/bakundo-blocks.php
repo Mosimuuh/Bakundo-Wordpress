@@ -8,5 +8,6 @@
 
 function bakundo_register_blocks() {
     register_block_type( __DIR__ . '/bakundo-hero/build/bakundo-hero' );
+    register_block_type( __DIR__ . '/bakundo-header/build/bakundo-header' );
 }
 add_action( 'init', 'bakundo_register_blocks' );

@@ -1,6 +1,25 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
+  "customTemplates": [
+    {
+      "name": "front-page",
+      "title": "Forside",
+      "postTypes": ["page"]
+    }
+  ],
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ],
   "settings": {
     "color": {
       "palette": [
@@ -34,30 +53,14 @@
     "typography": {
       "fontFamilies": [
         {
-          "name": "Space Grotesk",
+          "name": "Staatliches",
           "slug": "heading",
-          "fontFamily": "Space Grotesk, sans-serif",
-          "fontFace": [
-            {
-              "fontFamily": "Space Grotesk",
-              "fontWeight": "400 700",
-              "fontStyle": "normal",
-              "src": [ "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" ]
-            }
-          ]
+          "fontFamily": "Staatliches, sans-serif"
         },
         {
-          "name": "Inter",
+          "name": "DM Sans",
           "slug": "body",
-          "fontFamily": "Inter, sans-serif",
-          "fontFace": [
-            {
-              "fontFamily": "Inter",
-              "fontWeight": "400 600",
-              "fontStyle": "normal",
-              "src": [ "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" ]
-            }
-          ]
+          "fontFamily": "DM Sans, sans-serif"
         }
       ]
     },

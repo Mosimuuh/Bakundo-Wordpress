@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/bakundo-header",
+  "version": "0.1.0",
+  "title": "Bakundo Header",
+  "category": "widgets",
+  "icon": "menu",
+  "description": "Sticky header med logo, navigation og CTA knap.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "logo": {
+      "type": "object",
+      "default": {}
+    },
+    "navItems": {
+      "type": "array",
+      "default": [
+        {
+          "label": "Ydelser",
+          "url": "#"
+        },
+        {
+          "label": "Cases",
+          "url": "#"
+        },
+        {
+          "label": "Om mig",
+          "url": "#"
+        }
+      ]
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Book en samtale"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#"
+    }
+  },
+  "textdomain": "bakundo-header",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
