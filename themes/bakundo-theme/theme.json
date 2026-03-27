@@ -1,32 +1,13 @@
 {
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 3,
-  "customTemplates": [
-    {
-      "name": "front-page",
-      "title": "Forside",
-      "postTypes": ["page"]
-    }
-  ],
-  "templateParts": [
-    {
-      "name": "header",
-      "title": "Header",
-      "area": "header"
-    },
-    {
-      "name": "footer",
-      "title": "Footer",
-      "area": "footer"
-    }
-  ],
   "settings": {
     "color": {
       "palette": [
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#000000"
+          "color": "#09afb3"
         },
         {
           "name": "Dark",
@@ -41,26 +22,26 @@
         {
           "name": "Gradient Start",
           "slug": "gradient-start",
-          "color": "#000000"
+          "color": "#ff7500"
         },
         {
           "name": "Gradient End",
           "slug": "gradient-end",
-          "color": "#000000"
+          "color": "#f4be31"
         }
       ]
     },
     "typography": {
       "fontFamilies": [
         {
-          "name": "Heading Font",
+          "name": "Staatliches",
           "slug": "heading",
-          "fontFamily": "sans-serif"
+          "fontFamily": "Staatliches, sans-serif"
         },
         {
-          "name": "Body Font",
+          "name": "DM Sans",
           "slug": "body",
-          "fontFamily": "sans-serif"
+          "fontFamily": "DM Sans, sans-serif"
         }
       ]
     },
@@ -72,8 +53,8 @@
   },
   "styles": {
     "color": {
-      "background": "#ffffff",
-      "text": "#0d0d0d"
+      "background": "#0d0d0d",
+      "text": "#ffffff"
     },
     "typography": {
       "fontFamily": "var(--wp--preset--font-family--body)",
