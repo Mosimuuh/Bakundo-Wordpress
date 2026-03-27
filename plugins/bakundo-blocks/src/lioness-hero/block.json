@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "bakundo/lioness-hero",
+    "version": "0.1.0",
+    "title": "Lioness Hero",
+    "category": "widgets",
+    "icon": "cover-image",
+    "description": "Hero sektion til Lioness Club",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "eyebrow": {
+            "type": "string",
+            "default": "Lioness Club 🦁"
+        },
+        "heading": {
+            "type": "string",
+            "default": "DU er f*cking unik!"
+        },
+        "headingSpan": {
+            "type": "string",
+            "default": "unik!"
+        },
+        "subheading": {
+            "type": "string",
+            "default": "Men ingen ved det endnu. Det ændrer vi."
+        },
+        "body": {
+            "type": "string",
+            "default": "Lioness Club lærer dig at lave content der stopper scollen og giver dig kunder — uden at være online 24/7. For kun 199 kr/mdr."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Bliv en del af Lioness Club →"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "priceText": {
+            "type": "string",
+            "default": "199 kr/mdr · Ingen binding · Kom i gang i dag"
+        },
+        "badgeQuote": {
+            "type": "string",
+            "default": "Jeg brugte én af skabelonerne og fik 100 følgere og flere leads på 24 timer!"
+        },
+        "badgeName": {
+            "type": "string",
+            "default": "@dinindresandhed · Medlem af Lioness Club"
+        },
+        "image": {
+            "type": "object",
+            "default": {}
+        }
+    },
+    "textdomain": "lioness-hero",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

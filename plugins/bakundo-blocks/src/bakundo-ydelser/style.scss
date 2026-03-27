@@ -1,0 +1,72 @@
+.bakundo-ydelser {
+    background: var(--wp--preset--color--dark);
+    padding: 8rem 8%;
+
+    &__header {
+        margin-bottom: 4rem;
+    }
+
+    &__label {
+        display: inline-block;
+        font-family: var(--wp--preset--font-family--body);
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--wp--preset--color--primary);
+        margin-bottom: 1rem;
+    }
+
+    &__heading {
+        font-family: var(--wp--preset--font-family--heading);
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 800;
+        color: var(--wp--preset--color--light);
+        margin: 0;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 2.5rem;
+        transition: border-color 0.3s ease, background 0.3s ease;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+    }
+
+    &__icon {
+        display: block;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__card-title {
+        font-family: var(--wp--preset--font-family--heading);
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--wp--preset--color--light);
+        margin: 0 0 0.75rem 0;
+    }
+
+    &__card-desc {
+        font-family: var(--wp--preset--font-family--body);
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.55);
+        line-height: 1.7;
+        margin: 0;
+    }
+}

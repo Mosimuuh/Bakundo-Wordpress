@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "create-block/bakundo-ydelser",
+    "version": "0.1.0",
+    "title": "Bakundo Ydelser",
+    "category": "widgets",
+    "icon": "grid-view",
+    "description": "Ydelser sektion med titel og service-kort.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "sectionLabel": {
+            "type": "string",
+            "default": "Hvad vi tilbyder"
+        },
+        "heading": {
+            "type": "string",
+            "default": "Ydelser der skaber resultater"
+        },
+        "services": {
+            "type": "array",
+            "default": [
+                {
+                    "icon": "📣",
+                    "title": "Meta Ads",
+                    "description": "Vi bygger og optimerer Meta-kampagner der rammer de rigtige mennesker på det rigtige tidspunkt."
+                },
+                {
+                    "icon": "🔍",
+                    "title": "Google Ads",
+                    "description": "Søgeannoncering der fanger kunder i det øjeblik de leder efter det du tilbyder."
+                },
+                {
+                    "icon": "💻",
+                    "title": "Hjemmesider",
+                    "description": "Hurtige, konverterende hjemmesider bygget til at understøtte din forretning."
+                }
+            ]
+        }
+    },
+    "textdomain": "bakundo-ydelser",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
+}

@@ -7,7 +7,10 @@
  */
 
 function bakundo_register_blocks() {
-    register_block_type( __DIR__ . '/bakundo-hero/build/bakundo-hero' );
-    register_block_type( __DIR__ . '/bakundo-header/build/bakundo-header' );
+    register_block_type( __DIR__ . '/build/bakundo-hero' );
+    register_block_type( __DIR__ . '/build/bakundo-header' );
+    register_block_type( __DIR__ . '/build/bakundo-ydelser' );
+    register_block_type( __DIR__ . '/build/lioness-hero' );
+
 }
 add_action( 'init', 'bakundo_register_blocks' );

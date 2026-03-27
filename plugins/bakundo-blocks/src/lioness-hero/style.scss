@@ -1,0 +1,192 @@
+.lioness-hero {
+    background: #1a0a12;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 60% 80% at 30% 50%, #ffc8e630 0%, transparent 70%),
+                    radial-gradient(ellipse 40% 60% at 80% 80%, #e8557a15 0%, transparent 60%);
+        pointer-events: none;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 80px 60px;
+        position: relative;
+        z-index: 2;
+        order: 2;
+    }
+
+    &__eyebrow {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #f4a0cc;
+        margin-bottom: 28px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background: #f4a0cc;
+        }
+    }
+
+    &__heading {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(38px, 5vw, 62px);
+        line-height: 1.08;
+        color: #ffe2f2;
+        font-style: italic;
+        margin-bottom: 12px;
+    }
+
+    &__heading-span {
+    display: block;
+    color: #f4a0cc;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 5vw, 62px);
+    font-style: normal;
+    line-height: 1.08;
+}
+
+    &__subheading {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(20px, 2.5vw, 28px);
+        color: #ffffff80;
+        font-weight: 400;
+        margin-bottom: 36px;
+        line-height: 1.4;
+    }
+
+    &__body {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #ffffffb0;
+        max-width: 480px;
+        margin-bottom: 48px;
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        background: linear-gradient(135deg, #e8557a 0%, #c9406a 100%);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 18px 36px;
+        border-radius: 3px;
+        text-decoration: none;
+        box-shadow: 0 8px 32px #e8557a40;
+        transition: transform 0.2s, box-shadow 0.2s;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px #e8557a60;
+        }
+    }
+
+    &__price {
+        font-size: 13px;
+        color: #ffffff60;
+    }
+
+    &__right {
+        position: relative;
+        overflow: hidden;
+        order: 1;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to left, #1a0a12 0%, transparent 30%),
+                        linear-gradient(to top, #1a0a12 0%, transparent 25%);
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        filter: brightness(0.85) saturate(1.1);
+        display: block;
+        cursor: pointer;
+    }
+
+    &__image-placeholder {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        background: #2d1220;
+        color: #f4a0cc;
+        border: 2px dashed #f4a0cc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    &__badge {
+        position: absolute;
+        bottom: 48px;
+        left: 32px;
+        z-index: 3;
+        background: #ffe2f2;
+        color: #1a0a12;
+        padding: 20px 28px;
+        border-radius: 4px;
+        font-size: 13px;
+        max-width: 260px;
+        box-shadow: 0 20px 60px #00000060;
+    }
+
+    &__badge-stars {
+        color: #c9873a;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    &__badge-name {
+        font-weight: 600;
+        font-size: 12px;
+        color: #e8557a;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+
+        &__right {
+            height: 420px;
+            order: 1;
+        }
+
+        &__left {
+            padding: 60px 32px;
+            order: 2;
+        }
+    }
+}
