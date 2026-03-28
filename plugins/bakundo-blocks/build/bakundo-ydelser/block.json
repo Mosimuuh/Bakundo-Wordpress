@@ -6,7 +6,7 @@
   "title": "Bakundo Ydelser",
   "category": "widgets",
   "icon": "grid-view",
-  "description": "Ydelser sektion med titel og service-kort.",
+  "description": "Ydelser sektion med bento-grid layout.",
   "supports": {
     "html": false
   },
@@ -19,25 +19,42 @@
       "type": "string",
       "default": "Ydelser der skaber resultater"
     },
+    "bodyText": {
+      "type": "string",
+      "default": "Vi hjælper ambitiøse virksomheder med at vækste online — fra fundament til annoncering."
+    },
     "services": {
       "type": "array",
       "default": [
         {
-          "icon": "📣",
-          "title": "Meta Ads",
-          "description": "Vi bygger og optimerer Meta-kampagner der rammer de rigtige mennesker på det rigtige tidspunkt."
+          "icon": "🌐",
+          "title": "Hjemmesider",
+          "description": "Vi bygger hurtige, konverterende hjemmesider der arbejder for dig døgnet rundt og understøtter din annoncering."
+        },
+        {
+          "icon": "📊",
+          "title": "Tracking & Analytics",
+          "description": "Fuld indsigt i hvad der virker — og hvad der ikke gør."
         },
         {
           "icon": "🔍",
           "title": "Google Ads",
-          "description": "Søgeannoncering der fanger kunder i det øjeblik de leder efter det du tilbyder."
+          "description": "Søgeannoncering der fanger kunder præcis i det øjeblik de leder efter det du tilbyder."
         },
         {
-          "icon": "💻",
-          "title": "Hjemmesider",
-          "description": "Hurtige, konverterende hjemmesider bygget til at understøtte din forretning."
+          "icon": "📣",
+          "title": "Meta Ads",
+          "description": "Kampagner der rammer de rigtige mennesker på det rigtige tidspunkt."
         }
       ]
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Læs mere om hvorfor du skal vælge Bakundo"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#hvorfor-bakundo"
     }
   },
   "textdomain": "bakundo-ydelser",
